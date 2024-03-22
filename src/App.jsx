@@ -105,8 +105,6 @@ function App() {
       let diffMonths = cur_date.diff(input_day, "month");
       let diffYears = cur_date.diff(input_day, "year");
 
-      console.log(diffDays, diffMonths, diffYears);
-
       calling(0, diffDays, "d");
       calling(0, diffMonths, "m");
       calling(0, diffYears, "y");

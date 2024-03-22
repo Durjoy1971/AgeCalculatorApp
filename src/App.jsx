@@ -4,8 +4,8 @@ import dayjs from "dayjs";
 
 function App() {
   const [year, setYear] = useState("--");
-  const [month, setMonth] = useState("- -");
-  const [day, setDay] = useState("- -");
+  const [month, setMonth] = useState("--");
+  const [day, setDay] = useState("--");
 
   const [dayInput, setDayInput] = useState("");
   const [monthInput, setMonthInput] = useState("");

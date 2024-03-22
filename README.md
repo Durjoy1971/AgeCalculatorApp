@@ -1,33 +1,38 @@
-## AgeCalculator
+# AgeCalculator
 
 This AgeCalculator project is a simple React application that provides a user-friendly interface for entering the day, month, and year of birth, and then calculates and displays how many years, months, and days has been passed.
 
-### Project Features
+## Project Features
 
 - Allows users to input their birth date.
 - Validates the input to ensure that the date entered is valid.
 - Calculates how many years, months, and days has been passed based on the entered birth date.
 - Displays how many years, months, and days has been passed.
 
-### Technologies Used
+## Technologies Used
 
 - React: A JavaScript library for building user interfaces.
 - Day.js: A minimalist JavaScript library for parsing, validating, manipulating, and displaying dates and times.
 - Tailwind CSS: A utility-first CSS framework for rapidly building custom designs.
 - SVG Icon: Utilizes SVG icons for visual elements.
 
-### How to Use
+## How to Use
 
 1. Visit the [AgeCalculator website](https://daypassed.netlify.app/).
 2. Enter the day, month, and year of your birth in the respective input fields.
 3. Click on the arrow icon to calculate your how many years, months, and days has been passed.
 4. View the calculated age displayed in years, months, and days.
 
-### Project Structure
+## Project Structure
 
 - **App.jsx:** Contains the main logic and components for the AgeCalculator application.
 - **assets/icon-arrow.svg:** SVG icon used for the calculation button.
 - **README.md:** Contains information about the project, including how to use it and technologies used.
+
+## Screenshots
+![image](https://github.com/Durjoy1971/AgeCalculatorApp/assets/91456847/96ea8458-8ac8-433e-8b9e-664268b28334)
+![image](https://github.com/Durjoy1971/AgeCalculatorApp/assets/91456847/a6d47daa-bbad-4393-9b4b-46099057efe8)
+
 
 ### Running the Project Locally
 

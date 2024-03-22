@@ -41,6 +41,21 @@ function App() {
     });
   };
 
+  function calling(i, limit, type) {
+    let bar = limit / 5;
+    const interval = setInterval(() => {
+      i = Math.min(i, limit);
+      if (type === "d") setDay(i);
+      if (type === "m") setMonth(i);
+      if (type === "y") setYear(i);
+      i += bar;
+      i = Math.floor(i);
+      if (i > limit) {
+        clearInterval(interval);
+      }
+    }, 300);
+  }
+
   const buttonClicked = () => {
     setErrorMessage({ 0: "", 1: "", 2: "" });
     let flag = true;
@@ -81,7 +96,6 @@ function App() {
       check(0, "Enter a valid day");
       flag = false;
     }
-    console.log(flag);
     if (flag) {
       const cur_date = dayjs();
       const input_day = dayjs(`${yearInput}-${monthInput}-${dayInput}`);
@@ -89,9 +103,13 @@ function App() {
       let diffMonths = cur_date.diff(input_day, "month");
       let diffYears = cur_date.diff(input_day, "year");
 
-      setDay(diffDays);
-      setMonth(diffMonths);
-      setYear(diffYears);
+      calling(0, diffDays, "d");
+      calling(0, diffMonths, "m");
+      calling(0, diffYears, "y");
+
+      //setDay(diffDays);
+      // setMonth(diffMonths);
+      // setYear(diffYears);
     } else {
       setYear("- -");
       setMonth("- -");

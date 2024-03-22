@@ -42,14 +42,16 @@ function App() {
   };
 
   function calling(i, limit, type) {
-    let bar = limit / 5;
+    let bar = Math.floor(limit / 5);
+
     const interval = setInterval(() => {
+      i += bar;
+      i = Math.floor(i);
       i = Math.min(i, limit);
       if (type === "d") setDay(i);
       if (type === "m") setMonth(i);
       if (type === "y") setYear(i);
-      i += bar;
-      i = Math.floor(i);
+
       if (i > limit) {
         clearInterval(interval);
       }
@@ -106,10 +108,6 @@ function App() {
       calling(0, diffDays, "d");
       calling(0, diffMonths, "m");
       calling(0, diffYears, "y");
-
-      //setDay(diffDays);
-      // setMonth(diffMonths);
-      // setYear(diffYears);
     } else {
       setYear("- -");
       setMonth("- -");

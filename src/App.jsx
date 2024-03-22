@@ -52,7 +52,7 @@ function App() {
       if (type === "m") setMonth(i);
       if (type === "y") setYear(i);
 
-      if (i > limit) {
+      if (i >= limit) {
         clearInterval(interval);
       }
     }, 300);

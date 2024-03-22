@@ -42,11 +42,11 @@ function App() {
   };
 
   function calling(i, limit, type) {
-    let bar = Math.floor(limit / 5);
-
+    let bar = Math.ceil(limit / 5);
+    console.log(bar, type);
     const interval = setInterval(() => {
       i += bar;
-      i = Math.floor(i);
+      i = Math.ceil(i);
       i = Math.min(i, limit);
       if (type === "d") setDay(i);
       if (type === "m") setMonth(i);
@@ -104,6 +104,8 @@ function App() {
       let diffDays = cur_date.diff(input_day, "day");
       let diffMonths = cur_date.diff(input_day, "month");
       let diffYears = cur_date.diff(input_day, "year");
+
+      console.log(diffDays, diffMonths, diffYears);
 
       calling(0, diffDays, "d");
       calling(0, diffMonths, "m");

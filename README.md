@@ -1,6 +1,6 @@
 ## AgeCalculator
 
-This AgeCalculator project is a simple React application that calculates the period based on the user's input of birth date. It provides a user-friendly interface for entering the day, month, and year of birth, and then calculates and displays how many years, months, and days has been passed.
+This AgeCalculator project is a simple React application that provides a user-friendly interface for entering the day, month, and year of birth, and then calculates and displays how many years, months, and days has been passed.
 
 ### Project Features
 
